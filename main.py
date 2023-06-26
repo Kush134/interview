@@ -11,12 +11,12 @@ import pinecone
 import os
 from dotenv import load_dotenv
 load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = os.getenv("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")
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 PINECONE_ENVIRONMENT_NAME = os.getenv("northamerica-northeast1-gcp")
 
 openai.api_key = OPENAI_API_KEY # for open ai
-os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY # for lang chain
+os.environ["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"] = OPENAI_API_KEY # for lang chain
 
 pinecone.init(
     api_key=PINECONE_API_KEY,  # find at app.pinecone.io
