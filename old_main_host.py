@@ -9,7 +9,7 @@ import openai
 import pinecone
 import os
 
-OPENAI_API_KEY = st.secrets[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]
+OPENAI_API_KEY = st.secrets["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"]
 PINECONE_API_KEY = st.secrets["64299cf7-e558-4dbf-bbf4-5763c78f6ac4"]
 PINECONE_ENVIRONMENT_NAME = st.secrets[northamerica-northeast1-gcp]
 
