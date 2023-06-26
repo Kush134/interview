@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-PINECONE_ENVIRONMENT_NAME = os.getenv("PINECONE_ENVIRONMENT_NAME")
+PINECONE_ENVIRONMENT_NAME = os.getenv("northamerica-northeast1-gcp")
 
 openai.api_key = OPENAI_API_KEY # for open ai
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY # for lang chain
